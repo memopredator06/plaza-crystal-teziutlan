@@ -1,0 +1,138 @@
+body {
+   padding: 0;
+   margin: 0;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+div  .enlace {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: #012060;
+	overflow-x: hidden;
+	transition: 0.5s;
+  opacity: 0.98;
+}
+.sidenav a {
+  margin: 20px 0 0 100px;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+  display: block;
+  transition: 0.3s;
+} 
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+.abrir {
+  color: black;
+  font-size: 45px;
+}
+
+ .bar1, .bar2, .bar3 {
+   width: 35px;
+   height: 5px;
+   background-color: #333;
+   margin: 6px 0;
+   transition: 0.4s;
+ }
+ 
+ .change .bar1 {
+   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+   transform: rotate(-45deg) translate(-9px, 6px);
+ }
+ 
+ .change .bar2 {opacity: 0;}
+ 
+ .change .bar3 {
+   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+   transform: rotate(45deg) translate(-8px, -8px);
+ }
+.contenedor1, .contenedor2 {
+   padding-top: 90px;
+}
+.titulo-uno, .titulo-dos {
+   margin-top: 25px;
+   font-size: 40px;
+   color: #012060;
+}
+div > .boton {
+   padding: 20px 150px;
+   background: #012060;
+   color: white;
+}
+div > .boton:hover {
+  background: #042E84;
+  color: white;
+}
+div .imagen {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.banner-publicidad {
+   padding-top: 100px;
+}
+
+
+footer {
+   background: white;
+   color: black;
+   padding: 90px 0 50px 0;
+   margin-top: 60px;
+ }
+ footer .footer1 p {
+   margin-top: 30px;
+ }
+ 
+ footer .footer3 {
+   padding-top: 50px;
+ }
+ footer .footer3 a {
+   background: white;
+   border-radius: 50%;
+   height: 40px;
+   width: 40px;
+   padding: 0;
+   padding-top: 5px;
+ }
+ footer .footer3 a:hover {
+   background: gray;
+ }
+ footer .footer3 .nav-item li {
+   margin: 0 5px;
+ }
+ 
+ 
+ @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+ 
+ @media (max-width: 767px) {
+
+   .footer1 {
+     min-height: 150px;
+   }
+ 
+ }
+ 
+
